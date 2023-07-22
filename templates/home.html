@@ -2,22 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCare</title>
-    <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-        #banner {
-          height: 360px;
-          width: 100%;
-          object-fit: cover;
-          margin-bottom: 16px;
-        }
-    </style>
+    {% include 'bootstrap.html' %}
+    
 </head>
 
-<body> {% include 'navbar.html' %} <img class="img-fluid" id="banner" src="/static/banner.jpg">
+<body>
+  {% include 'navbar.html' %}
+  {% include 'banner.html' %}
     <div class="container">
         <h1 class="text-center mt-2 mb-4 "> TechCare Careers </h1>
         <div class="row" style="margin-bottom: 32px;">
